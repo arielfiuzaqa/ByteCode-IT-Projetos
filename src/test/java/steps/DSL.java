@@ -1,10 +1,9 @@
 package steps;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-
-import static org.junit.Assert.assertEquals;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DSL {
 
@@ -13,35 +12,29 @@ public class DSL {
     public DSL(WebDriver driver) {
         this.driver = driver;
     }
-    public void Go(String site){
+    public void abrirBrowser(){
+        System.setProperty("webdriver.chrome.driver", "C:/Program Files/JetBrains/drivers/chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+    }
+    public void vaiParaSite(String site){
         driver.get(site);
     }
-    public void print(String id) {
-        driver.findElement(By.id(id)).getText();
-        System.out.println(driver.findElement(By.id(id)).getText());
+    public void preencheCamposDeUsuarioESenha(String campoUsuario, String campoSenha){
+        driver.findElement(By.id("user-name")).sendKeys(campoUsuario);
+        driver.findElement(By.id("password")).sendKeys(campoSenha);
     }
-    public void printX(String xp){
-        System.out.println(driver.findElement(By.xpath(xp)).getText());
+    public void click(){
+        driver.findElement(By.id("login-button")).click();
     }
-    public void println(String fala){
-        System.out.println(fala);
-    }
-    public void click(String id){
-        driver.findElement(By.id(id)).click();
-    }
-    public void escrever(String id, String senh){
-        driver.findElement(By.id(id)).sendKeys(senh);
-    }
-    public void elementClear(String id){
-        WebElement element = driver.findElement(By.id(id));
-        element.clear();
-    }
-    public void assertUrl(String site){
-        assertEquals(site, driver.getCurrentUrl());
-    }
-    public void getUrl(){
+    public void Confirmo(String confirmou){
+        Assert.assertEquals(confirmou, driver.getCurrentUrl());
         System.out.println("O site é:  " + driver.getCurrentUrl());
     }
-
-
+    public void Checar(String resultado){
+        System.out.println("O teste " + resultado);
+    }
+    public void fecharBrowser(){
+        driver.quit();
+    }
 }
