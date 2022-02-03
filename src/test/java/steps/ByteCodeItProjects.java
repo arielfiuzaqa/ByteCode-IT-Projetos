@@ -26,7 +26,5 @@ public class ByteCodeItProjects {
     @Então("uma mensagem de confirmo{string} deve aparecer")
     public void umaMensagemDeConfirmoConfirmacaoDeveAparecer(String confirmacao) { dsl.Checar(confirmacao); }
     @After
-    public void fim() {
-        dsl.fecharBrowser();
-    }
+    public void fim() { dsl.fecharBrowser(); }
 }

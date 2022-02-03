@@ -11,8 +11,7 @@ public class DSL {
 
     public DSL(WebDriver driver) { this.driver = driver; }
 
-    public void abrirBrowser(){
-        System.setProperty("webdriver.chrome.driver", "C:/Program Files/JetBrains/drivers/chromedriver.exe");
+    public void abrirBrowser(){ System.setProperty("webdriver.chrome.driver", "C:/Program Files/JetBrains/drivers/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
     }
@@ -22,8 +21,7 @@ public class DSL {
         driver.findElement(By.id("password")).sendKeys(campoSenha);
     }
     public void click(){ driver.findElement(By.id("login-button")).click(); }
-    public void Confirmo(String confirmou){ Assert.assertEquals(confirmou, driver.getCurrentUrl());
-        System.out.println("O site é:  " + driver.getCurrentUrl()); }
+    public void Confirmo(String confirmou){ Assert.assertEquals(confirmou, driver.getCurrentUrl()); System.out.println("O site é:  " + driver.getCurrentUrl()); }
     public void Checar(String resultado){ System.out.println("O teste " + resultado); }
     public void fecharBrowser(){ driver.quit(); }
 }
