@@ -10,7 +10,7 @@ Cenários de Testes:
 * Casos de Testes Válidos
 * Casos de Testes Falhos
 
-<h2>Tecnologias Usadas</h2>
+<h2>💡Tecnologias Usadas💡</h2>
 
 InteliJ |
 Java |
@@ -21,3 +21,5 @@ DSL |
 BDD |
 Git |
 Github |
+
+  Para ver o código basta ir em: ByteCode-IT-Projetos/src/test/java/features/  e  ByteCode-IT-Projetos/src/test/java/steps/
