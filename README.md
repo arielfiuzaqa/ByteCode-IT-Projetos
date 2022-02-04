@@ -12,14 +12,10 @@ Cenários de Testes:
 
 <h2>💡Tecnologias Usadas💡</h2>
 
-InteliJ |
-Java |
-Cucumber |
-JUnit |
-Selenium |
-DSL |
-BDD |
-Git |
-Github |
+InteliJ | Java |
+Cucumber | JUnit |
+Selenium | DSL |
+BDD | Gherkin |
+Git | Github |
 
   Para ver o código basta ir em: ByteCode-IT-Projetos/src/test/java/features/  e  ByteCode-IT-Projetos/src/test/java/steps/
