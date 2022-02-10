@@ -9,22 +9,22 @@
       Então uma mensagem de confirmo<confirmacao> deve aparecer
 
       Exemplos:
-      |confirmacao |usuario                  |senha         |resultado                                 |
-      |"Passou!"   |"standard_user"          |"secret_sauce"|"https://www.saucedemo.com/inventory.html"|
-      |"Passou!"   |"problem_user"           |"secret_sauce"|"https://www.saucedemo.com/inventory.html"|
-      |"Passou!"   |"performance_glitch_user"|"secret_sauce"|"https://www.saucedemo.com/inventory.html"|
-      |"Falhou!"   |"STANDARD_USER"          |"secret_sauce"|"https://www.saucedemo.com/"              |
-      |"Falhou!"   |"PROBLEM_USER"           |"secret_sauce"|"https://www.saucedemo.com/"              |
-      |"Falhou!"   |"PERFORMANCE_GLITCH_USER"|"secret_sauce"|"https://www.saucedemo.com/"              |
-      |"Falhou!"   |"standard_user"          |"SECRET_SAUCE"|"https://www.saucedemo.com/"              |
-      |"Falhou!"   |"problem_user"           |"SECRET_SAUCE"|"https://www.saucedemo.com/"              |
-      |"Falhou!"   |"performance_glitch_user"|"SECRET_SAUCE"|"https://www.saucedemo.com/"              |
-      |"Falhou!"   |"standard_user"          |""            |"https://www.saucedemo.com/"              |
-      |"Falhou!"   |"locked_out_user"        |""            |"https://www.saucedemo.com/"              |
-      |"Falhou!"   |"problem_user"           |""            |"https://www.saucedemo.com/"              |
-      |"Falhou!"   |"performance_glitch_user"|""            |"https://www.saucedemo.com/"              |
-      |"Falhou!"   |""                       |"secret_sauce"|"https://www.saucedemo.com/"              |
-      |"Falhou!"   |""                       |""            |"https://www.saucedemo.com/"              |
-      |"Bloqueado!"|"locked_out_user"        |"secret_sauce"|"https://www.saucedemo.com/"              |
-      |"Falhou!"   |""                       |""            |"https://www.saucedemo.com/"              |
+      |confirmacao                           |usuario                  |senha         |resultado                                 |
+      |"Passou!"                             |"standard_user"          |"secret_sauce"|"https://www.saucedemo.com/inventory.html"|
+      |"Passou!"                             |"problem_user"           |"secret_sauce"|"https://www.saucedemo.com/inventory.html"|
+      |"Passou!"                             |"performance_glitch_user"|"secret_sauce"|"https://www.saucedemo.com/inventory.html"|
+      |"Falhou! Por usuario em maiusculo"    |"STANDARD_USER"          |"secret_sauce"|"https://www.saucedemo.com/"              |
+      |"Falhou! Por usuario em maiusculo"    |"PROBLEM_USER"           |"secret_sauce"|"https://www.saucedemo.com/"              |
+      |"Falhou! Por usuario em maiusculo"    |"PERFORMANCE_GLITCH_USER"|"secret_sauce"|"https://www.saucedemo.com/"              |
+      |"Falhou! Por senha em maiusculo"      |"standard_user"          |"SECRET_SAUCE"|"https://www.saucedemo.com/"              |
+      |"Falhou! Por senha em maiusculo"      |"problem_user"           |"SECRET_SAUCE"|"https://www.saucedemo.com/"              |
+      |"Falhou! Por senha em maiusculo"      |"performance_glitch_user"|"SECRET_SAUCE"|"https://www.saucedemo.com/"              |
+      |"Falhou! Por falta de senha"          |"standard_user"          |""            |"https://www.saucedemo.com/"              |
+      |"Falhou! Por falta de senha"          |"locked_out_user"        |""            |"https://www.saucedemo.com/"              |
+      |"Falhou! Por falta de senha"          |"problem_user"           |""            |"https://www.saucedemo.com/"              |
+      |"Falhou! Por falta de senha"          |"performance_glitch_user"|""            |"https://www.saucedemo.com/"              |
+      |"Falhou! Por falta de usuario"        |""                       |"secret_sauce"|"https://www.saucedemo.com/"              |
+      |"Falhou! Por falta de usuario e senha"|""                       |""            |"https://www.saucedemo.com/"              |
+      |"Bloqueado!"                          |"locked_out_user"        |"secret_sauce"|"https://www.saucedemo.com/"              |
+      |"Falhou! Por falta de usuario e senha"|""                       |""            |"https://www.saucedemo.com/"              |
 
