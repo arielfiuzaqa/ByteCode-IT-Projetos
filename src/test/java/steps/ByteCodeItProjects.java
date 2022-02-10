@@ -16,7 +16,7 @@ public class ByteCodeItProjects {
     @Before
     public void inicio(){ dsl = new DSL(driver); dsl.abrirBrowser();}
 
-    @Dado("que o usuario esta na tela de Login")
+    @Dado("que o usuario esta na tela de login")
     public void que_o_usuario_esta_na_tela_de_login() { dsl.vaiParaSite("https://www.saucedemo.com/"); }
 
     @Quando("preenche com usuario{string} e senha{string}")
